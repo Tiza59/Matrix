@@ -33,7 +33,7 @@ class PerformanceTests: XCTestCase {
   }
 
   func testSubscriptRowGetter() {
-    var M = Matrix.random(rows: 1000, columns: 1000)
+    let M = Matrix.random(rows: 1000, columns: 1000)
     measure() {
       for _ in 1...10 {
         for i in 0..<M.rows {
@@ -56,7 +56,7 @@ class PerformanceTests: XCTestCase {
   }
   
   func testSubscripColumnGetter() {
-    var M = Matrix.random(rows: 1000, columns: 1000)
+    let M = Matrix.random(rows: 1000, columns: 1000)
     measure() {
       for _ in 1...10 {
         for i in 0..<M.columns {

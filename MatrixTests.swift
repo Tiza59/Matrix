@@ -193,7 +193,7 @@ extension MatrixTests {
 
   func testSubscriptRowGetter() {
     let a = [[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]]
-    var m = Matrix(a)
+    let m = Matrix(a)
     let M = copy(m)
 
     let r0 = m[row: 0]
@@ -230,7 +230,7 @@ extension MatrixTests {
 
   func testSubscriptRowsGetter() {
     let a = [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0], [7.0, 8.0, 9.0]]
-    var m = Matrix(a)
+    let m = Matrix(a)
     let M = copy(m)
 
     let r0 = m[rows: 0...0]
@@ -312,7 +312,7 @@ extension MatrixTests {
 
   func testSubscriptColumnGetter() {
     let a = [[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]]
-    var m = Matrix(a)
+    let m = Matrix(a)
     let M = copy(m)
 
     let c0 = m[column: 0]
@@ -345,7 +345,7 @@ extension MatrixTests {
 
   func testSubscriptColumnsGetter() {
     let a = [[1.0, 4.0, 7.0], [2.0, 5.0, 8.0], [3.0, 6.0, 9.0]]
-    var m = Matrix(a)
+    let m = Matrix(a)
     let M = copy(m)
 
     let r0 = m[columns: 0...0]
